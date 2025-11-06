@@ -44,10 +44,22 @@ body{
     text-align: center;
     margin-top: 40px;
     align-items: center;
+    font:icon;
     font-size: 100px;
     border: 10px;
     
 }
+
+#container h6{
+   text-align: center;
+    margin-top: 1px;
+    align-items: center;
+    font:oblique;
+    font-size: 20px;
+    border: 10px;
+    }
+    
+
 
 
 
