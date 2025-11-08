@@ -1,65 +1,300 @@
 *{
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    padding: 0;box-sizing: border-box;
+    font-family:'Gilroy';
+    }
+    *::selection{
+        color: bisque;
+        background-color: black;
+    }
 
-html,
-body{
-    height: 100%;
-    width: 100%;
+    html,body{
+        height: 100%;
+        width: 100%;
+        background-color:  bisque;
+    }
    
-}
-body{
-    background-color: lightgreen;
-    display: flex;
-   
-   
-}
+    #page1 {
+        background-color: bisque;
+        min-height:  100vh;
+        position: relative;
+        width: 100%;
+        padding: 1.5vw;
+        padding-top: 19vh;
+    }
+    #page1 h1{
+        font-size: 15.5vw;
+        text-transform: uppercase;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 13vw;
+        color: rgb(83, 50, 7);
+        letter-spacing: -8px;
+    }
 
-body{
-    background-color: bisque;
-}
-
-#container{
-    height: 200px;
-    width: 100%;
-    background-color:  burlywood;
-     align-items: center;
-}
-#container img
-{
-    height: 200px;
-    width: 200px;
-    top: 0;
-    left: 0;
-    border: 10px solid burlywood;
-    border-radius: 5px;
-    position: absolute;
-   
-}
-
-#container h1{
-    text-align: center;
-    margin-top: 40px;
-    align-items: center;
-    font:icon;
-    font-size: 100px;
-    border: 10px;
-    
-}
-
-#container h6{
-   text-align: center;
-    margin-top: 1px;
-    align-items: center;
-    font:oblique;
-    font-size: 20px;
-    border: 10px;
+    #video-container {
+        height: 100vh;
+        width: 100%;
+      background-color: grey;
+     margin-top: 1vw;
+     position: relative;
     }
     
+    
+    #video-container video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
 
+    }
+
+    #video-container #play{
+        padding: 3vw 2vw;
+        background-color: black;
+        color:  bisque;
+        font-size: 1.3vw;
+        position: fixed;
+        text-transform: uppercase;
+        font-family: futura;
+        opacity: 0;
+        scale: 0;
+        border-radius: 50%;
+    }
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+    background-color:  bisque;
+
+}
+
+#page2 .elem{
+height: 100%;
+width: 30%;
+background-color:  bisque; 
+overflow: hidden;
+}
+#page2 .elem img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+scale: 1.1;
+}
+
+
+
+
+#page3
+{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 3vw 1vw;
+    background-color:  bisque;
+
+}
+
+#page3 .elem{
+height: 100%;
+width: 30%;
+background-color:  bisque;
+overflow: hidden;
+}
+
+#page3 .elem img{
+height: 100%;
+width: 100%;
+background-color:  bisque;
+object-fit: cover;
+scale: 1.2;
+}
+
+
+#page4{
+ min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 3vw 1vw;
+    background-color:  bisque;
+}
+
+#page4 .elem{
+height: 100%;
+width: 30%;
+background-color:  bisque;
+overflow: hidden;
+}
+
+#page4 .elem img{
+height: 100%;
+width: 100%;
+background-color: bisque;
+object-fit: cover;
+scale: 1.2;
+}
+
+
+#page{
+ height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 3vw 1vw;
+    background-color:  bisque;
+}
+
+#page #container2{
+    height: 40vh;
+    width: 100%;
+    opacity: 0.8;
+    background-color: black;
+    margin-top: 75vh;
+}
+
+
+
+
+
+
+
+@media (max-width:600px) {
+     #page1 {
+        min-height: 70vh;
+        background-color: bisque;
+        width: 100%;
+        padding: 5vw;
+        padding-top: 25vh;
+    }
+     #page1 h1{
+        font-size: 13vw;
+        text-transform: uppercase;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        line-height: 14vw;
+        color: rgb(83, 50, 7);
+        letter-spacing: 0px;
+    }
+    
+    #video-container {
+        height: 25vh;
+        width: 100%;
+      
+     margin-top: 3vw;
+     position: relative;
+    }
+
+      #video-container #play{
+        padding: 6vw 5.2vw; 
+        background-color: black;
+        color:  white;
+        font-size: 3vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%) ;
+       
+    }
+
+    #page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+    background-color:  bisque;
+
+}
+
+#page2 .elem{
+height: 100vh;
+width: 100%;
+background-color:  bisque; 
+overflow: hidden;
+}
+#page2 .elem img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+scale: 1.2;
+}
+
+#page3
+{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     flex-direction: column;
+    padding: 3vw 1vw;
+    background-color:  bisque;
+
+}
+
+#page3 .elem{
+height: 100vh;
+width: 100%;
+background-color:  bisque;
+overflow: hidden;
+}
+
+#page3 .elem img{
+height: 100%;
+width: 100%;
+background-color:  bisque;
+object-fit: cover;
+scale: 1.2;
+}
+
+
+#page4{
+ min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     flex-direction: column;
+    padding: 3vw 1vw;
+    background-color:  white;
+}
+
+#page4 .elem{
+height: 100vh;
+width: 100%;
+background-color:  bisque;
+overflow: hidden;
+}
+
+#page4 .elem img{
+height: 100%;
+width: 100%;
+background-color: bisque;
+object-fit: cover;
+scale: 1.2;
+}
+    
+}
 
 
 
